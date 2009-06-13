@@ -1,7 +1,6 @@
 " .vimrc File.
 " Author: Fabio Cevasco <h3rald@h3rald.com>
 
-" Backup files
 set backup
 if has("win32") || has("win16")
 	let osys="windows"
@@ -14,15 +13,16 @@ if has("win32") || has("win16")
 	let $scrapbook = "D:\\Documents\\Work\\Resources\\Miscellaneous\\scrapbook.textile"
 else
 	let osys=system('uname -s')
-	set backupdir = $HOME . "/temp"
-	set dir = $HOME . "/temp"
 	set guifont=DejaVu\ Sans\ Mono\ 9
 	let $vimrc = $VIM."/.vimrc"
 	let $scrapbook = $HOME."/scrapbook.textile"
 endif
 
 behave xterm
-colorscheme herald
+if !has("gui_running")
+	set t_Co=256
+endif
+
 " make backspace work 'as normal' (non-vi style)
 set backspace=2 
 set hlsearch
@@ -46,6 +46,8 @@ syntax on
 filetype on        
 filetype indent on
 filetype plugin on
+
+colorscheme herald
 
 " Key Mappings 
 map! <A-'> `
