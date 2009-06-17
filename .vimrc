@@ -9,7 +9,7 @@ if has("win32") || has("win16")
 	set columns=120
 	set backupdir=C:\temp
 	set dir=C:\temp
-	let $vimrc = $VIM."\\_vimrc"
+	let $vimrc = $VIM."\\.vimrc"
 	let $scrapbook = "D:\\Documents\\Work\\Resources\\Miscellaneous\\scrapbook.textile"
 else
 	let osys=system('uname -s')

@@ -34,7 +34,8 @@ if has("gui_running")
 
 	" Code Highlighting
 	hi Comment				guibg=#1F1F1F guifg=#696567 gui=none
-	hi Constant				guibg=#1F1F1F	guifg=#6DF584	gui=none	 
+	hi Constant				guibg=#1F1F1F	guifg=#6DF584	gui=none
+	hi Title					guibg=#1F1F1F	guifg=#6DF584	gui=bold	 
 	hi String 				guibg=#1F1F1F guifg=#FFB539	gui=none
 	hi Error 					guibg=#1F1F1F guifg=#FC4234 gui=none
 	hi Identifier 		guibg=#1F1F1F guifg=#70BDF1	gui=none
@@ -78,6 +79,7 @@ elseif &t_Co == 256
 		" Code Highlighting
 		hi Comment				ctermbg=234	ctermfg=241	cterm=none
 		hi Constant				ctermbg=234	ctermfg=84	cterm=none	 
+		hi Title					ctermbg=234	ctermfg=84	cterm=bold	 
 		hi String 				ctermbg=234	ctermfg=215	cterm=none
 		hi Error 					ctermbg=234	ctermfg=203	cterm=none
 		hi Identifier 		ctermbg=234	ctermfg=75	cterm=none
