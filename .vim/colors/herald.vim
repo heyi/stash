@@ -58,10 +58,10 @@ if has("gui_running")
 	hi IncSearch      guibg=#FF9E16 guifg=#000000 gui=none
 	"
 	"	-> Diff
-	" DiffAdd TODO
-	" DiffChange TODO
-	" DiffDelete TODO
-	" DiffText TODO
+	hi DiffAdd 				guibg=#006124	guifg=#ED9000 gui=none
+	hi DiffChange 		guibg=#0B294A	guifg=#A36000	gui=none
+	hi DiffDelete			guibg=#081F38	guifg=#ED9000	gui=none
+	hi DiffText				guibg=#12457D guifg=#ED9000	gui=underline
 	"
 		"
 	"	-> Menu
