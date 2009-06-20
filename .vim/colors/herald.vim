@@ -21,64 +21,60 @@ if has("gui_running")
 
 	" -> Text; Miscellaneous
 	hi Normal         guibg=#1F1F1F guifg=#D0D0D0 gui=none
-	" SpecialKey TODO
-	" VertSplit TODO
-	"	SignColumn TODO
-	"	NonText TODO
-	"	Directory TODO
+	hi SpecialKey     guibg=#1F1F1F guifg=#E783E9 gui=none
+	hi VertSplit      guibg=#1F1F1F guifg=#FFEE68 gui=none
+	hi SignColumn     guibg=#1F1F1F guifg=#BF81FA gui=none
+	hi NonText        guibg=#1F1F1F guifg=#FC6984 gui=none
+	hi Directory      guibg=#1F1F1F guifg=#FFEE68	gui=none 
 	hi Title          guibg=#1F1F1F guifg=#6DF584 gui=bold
 	
 	" -> Cursor 
 	hi Cursor         guibg=#FFEE68 guifg=#1F1F1F gui=none
-	"CursorIM TODO
+	hi CursorIM       guibg=#FFEE68 guifg=#1F1F1F gui=none
 	hi CursorColumn   guibg=#000000               gui=none
 	hi CursorLine     guibg=#000000               gui=none
 	
 	" -> Folding
-	" Folded TODO
-	hi FoldColumn     guibg=#1F1F1F guifg=#70BDF1 gui=none
+	hi FoldColumn     guibg=#001336 guifg=#003DAD gui=none
+	hi Folded         guibg=#001336 guifg=#003DAD gui=none
 	
 	" -> Line info	
 	hi LineNr         guibg=#000000 guifg=#696567 gui=none
 	hi StatusLine     guibg=#000000 guifg=#696567 gui=none
 	hi StatusLineNC   guibg=#25365a guifg=#696567 gui=none
 	
-
 	" -> Messages
 	hi ErrorMsg       guibg=#A32024 guifg=#D0D0D0 gui=none
-	"	ModeMsg TODO
-	"	MoreMsg TODO
-	"	Question TODO
-	"	WarningMsg TODO
+	hi Question			  guibg=#1F1F1F guifg=#FFA500 gui=none
+	hi WarningMsg     guibg=#FFA500 guifg=#000000 gui=none
+	hi MoreMsg        guibg=#1F1F1F guifg=#FFA500 gui=none
+	hi ModeMsg        guibg=#1F1F1F guifg=#FFA500 gui=none
 	
-	" Search	
-	" TODO change (invisible with CursorColumn)	
-	hi Search         guibg=#FF9E16 guifg=#000000 gui=none 
-	" TODO change (invisible with CursorColumn)	
-	hi IncSearch      guibg=#FF9E16 guifg=#000000 gui=none
-	"
+	" -> Search	
+	hi Search         guibg=#FF9E16								gui=none 
+	hi IncSearch      guibg=#FF9E16								gui=none
+
 	"	-> Diff
 	hi DiffAdd 				guibg=#006124	guifg=#ED9000 gui=none
 	hi DiffChange 		guibg=#0B294A	guifg=#A36000	gui=none
 	hi DiffDelete			guibg=#081F38	guifg=#ED9000	gui=none
 	hi DiffText				guibg=#12457D guifg=#ED9000	gui=underline
-	"
-		"
+
 	"	-> Menu
-	"	Pmenu		Popup menu: normal item. TODO
-	" PmenuSel	Popup menu: selected item. TODO
-	" PmenuSbar	Popup menu: scrollbar. TODO
-	" PmenuThumb	Popup menu: Thumb of the scrollbar. TODO
-	" WildMenu TODO
+	hi Pmenu 					guibg=#140100 guifg=#660300 gui=none
+	hi PmenuSel 			guibg=#F17A00 guifg=#4C0200 gui=none
+	hi PmenuSbar 			guibg=#430300 						 	gui=none
+	hi PmenuThumb 		guibg=#720300 							gui=none
+	hi PmenuSel 			guibg=#F17A00 guifg=#4C0200 gui=none
 
 	" -> Tabs
-	" TabLine TODO
-	" TabLineFill TODO
-	" TabLineSel TODO
+	hi TabLine				guibg=#141414 guifg=#1F1F1F gui=none
+	hi TabLineFill 		guibg=#000000								gui=none
+	hi TabLineSel			guibg=#1F1F1F	guifg=#D0D0D0	gui=bold	
 	"
 	"	-> Visual Mode
-	" Visual TODO
-	" VisualNOS TODO
+	hi Visual 				guibg=#01140F
+	hi VisualNOS      guibg=#021F17
 
 	" Code
 	hi Comment        guibg=#1F1F1F guifg=#696567 gui=none
