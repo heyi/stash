@@ -40,6 +40,10 @@ This project is still in planning stage, feel free to have a look at the "issues
 
 h3. Vim files & _the Stash_
 
+If you read the previous two sections of this post, you may have noticed that I'm growing more and more fond of git (and GitHub). Besides the repositories I already mentioned earlier on, I also created a personal "stash":http://github.com/h3rald/stash, which I'm using mainly to store some of my Linux dotfiles, article drafts and ...Vim customizations.
+
+If you're looking for a color scheme for Vim, check out my very own "herald.vim":/herald-vim-color-scheme, and tell me what you think.
+
 h3. Getting ready for the Big Step
 
 This will probably be my last post as a free man, as I'm getting married (civilly) on July 2nd and (religiously) on July 11th. 
@@ -54,5 +58,4 @@ What's left to do now? Well:
 * Make sure my dad actually ships the 96 specially-bottled bottles of our own wine to uncle John, in Ireland.
 * Make sure uncle John doesn't drink all the 96 bottles of wine before the wedding reception.
 * Make sure my best man understood that the speech he has do make _must_ be in English, at least 3 minutes long and not too offensive to the groom.
-* Pay a huge, colossal heap of money for the whole thing. It's going to cost us (and my dad) quite a bit, in the end. But it's a one-in-a-lifetime experience, after all (getting totally trashed in a fancy hotel with all your family, including 2nd and 3rd grade cousins).
-
+* Pay a huge, colossal heap of money for the whole thing. It's going to cost us (and my dad) quite a bit, in the end. But it's a once-in-a-lifetime experience, after all (getting totally trashed in a fancy hotel with all your family, including 2nd and 3rd grade cousins).
