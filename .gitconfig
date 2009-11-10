@@ -1,0 +1,6 @@
+[user]
+	name = h3rald
+	email = h3rald@h3rald.com
+[alias]
+	graph = log --graph --pretty=oneline --abbrev-commit
+	graph-ext = log --graph --pretty=medium --abbrev-commit
