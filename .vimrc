@@ -64,3 +64,4 @@ au BufNewFile,BufRead *.as set filetype=actionscript
 au BufNewFile,BufRead *.bbcode,*.bbc set filetype=bbcode
 au BufNewFile,BufRead *.io,*.iorc set filetype=io
 au BufNewFile,BufRead *.nim set filetype=nimrod
+au BufNewFile,BufRead *.glyph set filetype=glyph
