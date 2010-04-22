@@ -10,7 +10,8 @@ endif
 "setlocal autoindent
 syntax region glyphMacro matchgroup=glyphDelimiter start=/[^\[\]|\\ ]\+\[/ms=e end=/\]/ skip=/\\\[\|\\\]/ contains=glyphMacro,glyphQuotingMacro,glyphEscape
 syntax match glyphDelimiter /\[\|\]/
-syntax match glyphMacroName /[^\[\]|\\ ]\+\[\([^=]\|\n\)/me=e-2 
+syntax match glyphMacroName /[^\[\]|\\ ]\+\[[^=]/me=e-2
+syntax match glyphMacroName /[^\[\]|\\ ]\+\[/me=e-1
 syntax region glyphQuotingMacro matchgroup=glyphQuotingDelimiter start=/[^\[\]|\\ ]\+\[=/ end=/=\]/ skip=/\\\[=\|\\\=\]/ contains=glyphEscape,glyphParamSeparator
 syntax match glyphParamSeparator /|/
 syntax match glyphEscape /\\./
