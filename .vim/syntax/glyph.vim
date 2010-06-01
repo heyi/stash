@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language: Glyph
-" Last Change: 2010-06-01
+" Last Change: 2010-05-30
 " Author: Fabio Cevasco <h3rald@h3rald.com>
 
 if exists("b:current_syntax")
@@ -12,7 +12,7 @@ syntax region glyphMacro start=/[^\[\]|\\ ]\+\[/ms=e end=/\]/ skip=/\\\[\|\\\]/ 
 syntax match glyphDelimiter /\[\|\]/
 syntax match glyphMacroName /[^\[\]|\\ ]\+\[/me=e-1
 syntax match glyphAttributeName /\s*@[^\[\]|\\ ]\+\[/me=e-1
-syntax match glyphCoreMacroName /\s*\(snippet\|snippet:\|macro:\|include\|ruby\|config\|config:\|escape\|condition\|eq\|not\|and\|or\|match\|&\|&:\|%\|%:\|$\|$:\|.\|?\)\[/me=e-1
+syntax match glyphCoreMacroName /\s*\(snippet\|snippet:\|macro:\|include\|ruby\|config\|config:\|escape\|condition\|eq\|not\|and\|or\|match\|&\|&:\|%\|%:\|$\|$:\|\.\|?\)\[/me=e-1
 
 syntax region glyphQuotingMacro matchgroup=glyphQuotingDelimiter start=/[^\[\]|\\ ]\+\[=/ end=/=\]/ skip=/\\\[=\|\\\=\]/ contains=glyphEscape,glyphParamSeparator 
 
