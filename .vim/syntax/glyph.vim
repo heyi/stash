@@ -2,9 +2,9 @@
 " Language: Glyph
 " Last Change: 2010-06-05
 " Author: Fabio Cevasco <h3rald@h3rald.com>
-" Version: 1.4.0
+" Version: 1.4.2
 " Limitations:
-" - Only attribute name is highlighter in Quoting Macros
+" - Attributes are not highlighted in Quoting Macros
 " - Parameter/attribute placeholders are highlighted in all macros
 
 if exists("b:current_syntax")
@@ -16,13 +16,14 @@ syntax match glyphDelimiter /[^\[\]\|\\ ]\+\[/ contains=glyphMacroName contained
 syntax match glyphMacroName /[^\[\]\|\\ ]\+/ containedin=glyphDelimiter contained 
 syntax match glyphDelimiter /\]/ contained
 
-syntax region glyphQuotingMacro start=/[^\[\]\|\\ ]\+\[=/ end=/=\]/me=s-1 contains=glyphQuotingDelimiter,glyphEscape,glyphParamSeparator,glyphComment nextgroup=glyphQuotingDelimiter
+syntax region glyphQuotingMacro start=/[^\[\]\|\\ ]\+\[=/ end=/=\]/me=s-1 contains=glyphQuotingDelimiter,glyphEscape,glyphParamSeparator nextgroup=glyphQuotingDelimiter
 syntax match glyphQuotingDelimiter /[^\[\]\|\\ ]\+\[=/ contains=glyphQuotingMacroName contained
 syntax match glyphQuotingMacroName /[^\[\]\|\\= ]\+/ containedin=glyphQuotingDelimiter contained 
 syntax match glyphQuotingDelimiter /=\]/ containedin=glyphQuotingMacro contained
 
-syntax match glyphCoreMacroName /\s*\(snippet\|snippet:\|macro:\|include\|ruby\|config\|config:\|escape\|rewrite:\|rw:\|condition\|eq\|not\|and\|or\|match\|&\|&:\|%\|%:\|\$\|\$:\|\.\|?\)/ containedin=glyphDelimiter,glyphQuotingDelimiter contained
-syntax match glyphAttributeName /\s*@[^\[\]\|\\ ]\+\[/me=e-1 containedin=glyphDelimiter,glyphQuotingMacro contained 
+syntax match glyphCoreMacroName /\s*\(snippet\|snippet:\|macro:\|include\|ruby\|config\|config:\|escape\|rewrite:\|rw:\|condition\|eq\|not\|and\|or\|match\|&\|&:\|%\|%:\|\$\|\$:\|\.\|?\)\[/me=e-1 containedin=glyphDelimiter contained
+syntax match glyphCoreMacroName /\s*\(snippet\|snippet:\|macro:\|include\|ruby\|config\|config:\|escape\|rewrite:\|rw:\|condition\|eq\|not\|and\|or\|match\|&\|&:\|%\|%:\|\$\|\$:\|\.\|?\)\[=/me=e-2 containedin=glyphQuotingDelimiter contained
+syntax match glyphAttributeName /\s*@[^\[\]\|\\ ]\+\[/me=e-1 containedin=glyphDelimiter contained 
 
 syntax match glyphPlaceholder /{{\(\d\+\|[^\[\]\|\\ ]\+\)}}/ contained
 syntax match glyphParamSeparator /|/
