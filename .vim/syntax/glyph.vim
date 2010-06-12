@@ -24,6 +24,7 @@ syntax match glyphQuotingDelimiter /=\]/ containedin=glyphQuotingMacro contained
 syntax match glyphCoreMacroName /\s*\(snippet\|snippet:\|macro:\|include\|ruby\|config\|config:\|escape\|rewrite:\|rw:\|condition\|eq\|not\|and\|or\|match\|&\|&:\|%\|%:\|\$\|\$:\|\.\|?\)\[/me=e-1 containedin=glyphDelimiter contained
 syntax match glyphCoreMacroName /\s*\(snippet\|snippet:\|macro:\|include\|ruby\|config\|config:\|escape\|rewrite:\|rw:\|condition\|eq\|not\|and\|or\|match\|&\|&:\|%\|%:\|\$\|\$:\|\.\|?\)\[=/me=e-2 containedin=glyphQuotingDelimiter contained
 syntax match glyphAttributeName /\s*@[^\[\]\|\\ ]\+\[/me=e-1 containedin=glyphDelimiter contained 
+syntax match glyphAttributeName /\s*@[^\[\]\|\\ ]\+\[=/me=e-2 containedin=glyphQuotingDelimiter contained 
 
 syntax match glyphPlaceholder /{{\(\d\+\|[^\[\]\|\\ ]\+\)}}/ contained
 syntax match glyphParamSeparator /|/
