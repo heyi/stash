@@ -54,8 +54,7 @@ map! <A-'> `
 map ,, `
 map! <A--> ~
 map <A--> ~
-map! <A-s> §
-map <A-s> §
+map! ''s <C-V>u00A7
 map <A-.> :exe ":edit ". $scrapbook <CR> 
 map <A-_> :exe ":source ". $vimrc <CR> 
 map <A-,> :exe ":edit ". $vimrc <CR> 
