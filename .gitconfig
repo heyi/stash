@@ -4,3 +4,5 @@
 [alias]
 	graph = log --graph --pretty=oneline --abbrev-commit
 	graph-ext = log --graph --pretty=medium --abbrev-commit
+[core]
+	excludesfile = ~/.gitignore

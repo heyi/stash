@@ -15,6 +15,8 @@ else
 	let osys=system('uname -s')
 	set guifont=DejaVu\ Sans\ Mono\ 9
 	let $vimrc = $VIM."/.vimrc"
+	set backupdir=~/tmp
+	set dir=~/tmp
 	let $scrapbook = $HOME."/scrapbook.textile"
 endif
 
@@ -50,11 +52,11 @@ filetype plugin on
 colorscheme herald
 
 " Key Mappings 
-map! <A-'> `
+map! ,, `
 map ,, `
-map! <A--> ~
-map <A--> ~
-map! ''s <C-V>u00A7
+map! ,- ~
+map ,- ~
+map! ,s <C-V>u00A7
 map <A-.> :exe ":edit ". $scrapbook <CR> 
 map <A-_> :exe ":source ". $vimrc <CR> 
 map <A-,> :exe ":edit ". $vimrc <CR> 
