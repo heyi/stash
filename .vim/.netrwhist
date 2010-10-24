@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/h3rald/development/glyph/tasks'
+let g:netrw_dirhist_2='/home/h3rald/development/jruby/glyph'
+let g:netrw_dirhist_3='/home/h3rald/development/jruby/glyph/src'
+let g:netrw_dirhist_4='/home/h3rald'
+let g:netrw_dirhist_5='/home/h3rald/development/glyph-exe/glyph_jruby'
+let g:netrw_dirhist_6='/home/h3rald/development/glyph-exe/glyph_jruby/package'
+let g:netrw_dirhist_7='/home/h3rald/development/glyph-exe/glyph_jruby/package/windows'
+let g:netrw_dirhist_8='/home/h3rald/development/stash'

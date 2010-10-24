@@ -1,0 +1,8 @@
+*~
+*.swp
+Thumbs.db
+.yardoc
+.rvmrc*
+.bundle
+.DS_Store
+Gemfile.lock
