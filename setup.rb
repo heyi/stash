@@ -5,9 +5,8 @@ require 'pathname'
 
 @stash = Pathname.new Dir.pwd
 @home = Pathname.new ENV['HOME']
-@symlinks = ['.vim', '.vimrc', '.git', '.gitconfig', '.inputrc', '.gitignore']
-
-puts @stash
+@tmp = Pathname.new "#{@home}/tmp"
+@symlinks = ['.bashrc', '.vim', '.vimrc', '.git', '.gitconfig', '.inputrc', '.gitignore']
 
 unless (['setup.rb', '.vimrc', '.inputrc'] - @stash.children.map{|c| c.basename.to_s}).empty? && @stash != @home then
 	raise RuntimeError, "Not in stash" 
@@ -30,6 +29,13 @@ def symlink_file(stash_file)
 	home_file.make_symlink stash_file
 	puts "   #{home_file} -> #{stash_file}"
 end
+
+unless @tmp.exist? then
+	# Make temporary directory
+	puts "Creating temporary directory..."
+	@tmp.mkdir
+end
+
 
 puts "Symlinking stash files..."
 @symlinks.each do |s|
