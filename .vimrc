@@ -32,6 +32,7 @@ set history=100
 set number
 set tabstop=2
 set shiftwidth=2
+set expandtab
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [ENC=%{strlen(&fenc)?&fenc:'none'}]\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
 set showcmd

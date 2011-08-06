@@ -29,7 +29,7 @@ syntax match glyphAttributeName /\s*@[^\[\]\|\\:\/ ]\+\[=/me=e-2 containedin=gly
 syntax match glyphPlaceholder /{{\(\d\+\|[^\[\]\|\\ ]\+\)}}/ contained
 syntax match glyphParamSeparator /|/
 syntax match glyphMacroSeparator /\// contained
-syntax match glyphEscape /\\./
+syntax match glyphEscape /\\.\|<>/
 syntax region glyphComment matchgroup=glyphCommentDelimiter start=/--\[/ end=/\]/ contains=glyphMacro,glyphQuotingMacro,glyphCommentedMacro
 syntax region glyphCommentedMacro matchgroup=glyphCommentDelimiter start=/[^\[\]\|\\ ]\+\[/ end=/\]/ contains=glyphCommentedMacro contained
 
