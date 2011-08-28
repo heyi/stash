@@ -25,7 +25,6 @@ if !has("gui_running")
 	set t_Co=256
 endif
 
-" make backspace work 'as normal' (non-vi style)
 set backspace=2 
 set hlsearch
 set history=100
