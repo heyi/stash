@@ -104,6 +104,14 @@ if has("gui_running")
   hi htmlUnderline            guibg=#1F1F1F guifg=#D0D0D0 gui=underline
   hi htmlUnderlineItalic      guibg=#1F1F1F guifg=#D0D0D0 gui=underline,italic
 
+  " Spellcheck formatting
+  if has("spell")
+    hi SpellBad   guisp=#FC4234 gui=undercurl
+    hi SpellCap   guisp=#70BDF1 gui=undercurl
+    hi SpellLocal guisp=#FFEE68 gui=undercurl  
+    hi SpellRare  guisp=#6DF584 gui=undercurl
+  endif
+
 elseif &t_Co == 256
 
   " -> Text; Miscellaneous
@@ -190,6 +198,14 @@ elseif &t_Co == 256
   hi htmlItalic               ctermbg=234  ctermfg=252   cterm=italic
   hi htmlUnderline            ctermbg=234  ctermfg=252   cterm=underline
   hi htmlUnderlineItalic      ctermbg=234  ctermfg=252   cterm=underline,italic
+
+  " Spellcheck formatting
+  if has("spell")
+    hi SpellBad   ctermbg=234  ctermfg=203   cterm=underline
+    hi SpellCap   ctermbg=234  ctermfg=84    cterm=none
+    hi SpellLocal ctermbg=234  ctermfg=75    cterm=none
+    hi SpellRare  ctermbg=234  ctermfg=227   cterm=none
+  endif
 
 elseif &t_Co == 16
 
@@ -278,6 +294,13 @@ elseif &t_Co == 16
   hi htmlUnderline             ctermbg=8 ctermfg=7 cterm=underline
   hi htmlUnderlineItalic       ctermbg=8 ctermfg=7 cterm=underline,italic
 
+  " Spellcheck formatting
+  if has("spell")
+    hi SpellBad   ctermbg=8  ctermfg=4    cterm=underline
+    hi SpellCap   ctermbg=8  ctermfg=10   cterm=none
+    hi SpellLocal ctermbg=8  ctermfg=11   cterm=none
+    hi SpellRare  ctermbg=8  ctermfg=14   cterm=none
+  endif
 
 elseif &t_Co == 8
 
@@ -366,6 +389,14 @@ elseif &t_Co == 8
   hi htmlUnderline             ctermbg=8 ctermfg=7 cterm=underline
   hi htmlUnderlineItalic       ctermbg=8 ctermfg=7 cterm=underline,italic
 
+  " Spellcheck formatting
+  if has("spell")
+    hi SpellBad   ctermbg=8  ctermfg=4    cterm=underline
+    hi SpellCap   ctermbg=8  ctermfg=2    cterm=none
+    hi SpellLocal ctermbg=8  ctermfg=3    cterm=none
+    hi SpellRare  ctermbg=8  ctermfg=6    cterm=none
+  endif
+
 endif
 
 hi! default link bbcodeBold htmlBold
@@ -375,11 +406,3 @@ hi! default link bbcodeBoldUnderline htmlBoldUnderline
 hi! default link bbcodeItalic htmlItalic
 hi! default link bbcodeItalicUnderline htmlUnderlineItalic
 hi! default link bbcodeUnderline htmlUnderline
-
-" Spellcheck formatting
-if has("spell")
-  hi SpellBad   guisp=#FC4234 gui=undercurl
-  hi SpellCap   guisp=#70BDF1 gui=undercurl
-  hi SpellLocal guisp=#FFEE68 gui=undercurl
-  hi SpellRare  guisp=#6DF584 gui=undercurl
-endif

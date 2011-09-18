@@ -10,7 +10,7 @@ if has("win32") || has("win16")
 	set backupdir=C:\temp
 	set dir=C:\temp
 	let $vimrc = $VIM."\\_vimrc"
-	let $scrapbook = "D:\\Documents\\Work\\Resources\\Miscellaneous\\scrapbook.textile"
+	let $scrapbook = "D:\\Documents\\Work\\Resources\\scrapbook.textile"
 else
 	let osys=system('uname -s')
 	set guifont=Monospace\ 9
@@ -73,3 +73,4 @@ au BufNewFile,BufRead *.bbcode,*.bbc set filetype=bbcode
 au BufNewFile,BufRead *.io,*.iorc set filetype=io
 au BufNewFile,BufRead *.nim set filetype=nimrod
 au BufNewFile,BufRead *.glyph set filetype=glyph
+au BufNewFile,BufRead *.l set filetype=picolisp
