@@ -74,3 +74,4 @@ au BufNewFile,BufRead *.io,*.iorc set filetype=io
 au BufNewFile,BufRead *.nim set filetype=nimrod
 au BufNewFile,BufRead *.glyph set filetype=glyph
 au BufNewFile,BufRead *.l set filetype=picolisp
+au BufRead,BufNewFile *.go set filetype=go
